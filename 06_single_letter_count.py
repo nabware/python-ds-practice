@@ -18,3 +18,4 @@ def single_letter_count(word, letter):
     # return letter_sum
 
     return sum([1 for c in word if c.lower() == letter.lower()]) # Could also do len() instead of sum()
+    # return word.lower().count(letter.lower())
