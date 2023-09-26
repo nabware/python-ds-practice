@@ -21,3 +21,18 @@ def sum_pairs(nums, goal):
         >>> sum_pairs([11, 20, 4, 2, 1, 5], 100)
         ()
     """
+    # backup plan:
+    # find all pairs that sum and farthest index
+    # return pair with closest index
+
+    skip = 1
+
+    while skip < len(nums):
+        for i in range(len(nums) - skip):
+            if nums[i] + nums[i + skip] == goal:
+                return (nums[i], nums[i + skip])
+
+        skip += 1
+
+    return ()
+
