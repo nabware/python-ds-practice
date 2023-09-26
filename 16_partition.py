@@ -23,3 +23,5 @@ def partition(lst, fn):
     partitioned_list.append([num for num in lst if fn(num)])
     partitioned_list.append([num for num in lst if not fn(num)])
     return partitioned_list
+
+    # return [[num for num in lst if fn(num)], [num for num in lst if not fn(num)]]

@@ -14,6 +14,8 @@ def multiply_even_numbers(nums):
     """
     evens = [num for num in nums if num % 2 == 0]
 
+    # filter for evens below instead of above
+
     product = 1
     for num in evens:
         product *= num

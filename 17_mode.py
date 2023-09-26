@@ -12,6 +12,22 @@ def mode(nums):
         2
     """
 
+    # look at solution
+
+    # keys = set(nums)
+    # most_common_key = None
+    # highest_count = 0
+
+    # for key in keys:
+    #     count = nums.count(key)
+    #     if count > highest_count:
+    #         highest_count = count
+    #         most_common_key = key
+
+    # return most_common_key
+
+    # use max with .items()
+
     freqs = {}
     for num in nums:
         freqs[num] = freqs.get(num, 0) + 1
