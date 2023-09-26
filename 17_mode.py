@@ -32,12 +32,6 @@ def mode(nums):
     for num in nums:
         freqs[num] = freqs.get(num, 0) + 1
 
-    highest_val = 0
-    highest_key = None
-    for key in freqs:
-        if freqs[key] > highest_val:
-            highest_val = freqs[key]
-            highest_key = key
+    return max(freqs, key=freqs.get)
 
-    return highest_key
 
